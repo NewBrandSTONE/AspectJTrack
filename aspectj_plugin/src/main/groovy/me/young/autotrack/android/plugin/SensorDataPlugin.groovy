@@ -7,6 +7,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.compile.JavaCompile
 
+
 public class SensorDataPlugin implements Plugin<Project> {
 
     @Override
@@ -14,11 +15,11 @@ public class SensorDataPlugin implements Plugin<Project> {
         final def log = project.logger
 
         project.dependencies {
-            implementaion 'org.aspectj:aspectjrt:1.9.0'
+            implementation 'org.aspectj:aspectjrt:1.9.0'
         }
 
         project.android.applicationVariants.all { variant ->
-            JavaCompile javaCompile = variant.javaComplie
+            JavaCompile javaCompile = variant.javaCompile
             javaCompile.doLast {
                 String[] args = ["-showWeaveInfo",
                                  "-1.5",

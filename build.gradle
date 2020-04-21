@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.2'
-//        classpath 'me.young:autotrack.android:1.0.0'
+        classpath 'me.young:autotrack.android:1.0.0'
     }
 }
 

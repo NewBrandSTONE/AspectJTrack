@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'me.young.autotrack.android'
+apply plugin: 'me.young.autotrack.android'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
